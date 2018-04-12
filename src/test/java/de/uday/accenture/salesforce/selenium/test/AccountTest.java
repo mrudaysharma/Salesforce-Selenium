@@ -28,7 +28,5 @@ public class AccountTest extends LoginTest {
         LOGGER.info("==============ACCOUNT CREATED=================");
         Thread.sleep(5000);
     }
-
-    // TODO add test methods here. The name must begin with 'test'. For example:
-    // public void testHello() {}
+ 
 }
