@@ -21,7 +21,7 @@
   * Save
 * Create new account via standard UI, save ID.
 
-## Dreamforce16Selenium specific set-up
+## Salesforce Selenium specific set-up
 * Download latest chromedriver
   * https://sites.google.com/a/chromium.org/chromedriver/downloads
   * In AccountEditTest.java, replace ${project.build}/src/test/chromedriver with location of chromedriver on your machine.
