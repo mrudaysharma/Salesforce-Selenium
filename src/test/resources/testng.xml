@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+	<test name="SalesForceSeleniumTesting">
+		<classes>
+			<class name="de.uday.accenture.salesforce.selenium.test.LoginTest" />
+                        <class name="de.uday.accenture.salesforce.selenium.test.AccountTest" />
+		</classes>
+	</test>
+</suite>
