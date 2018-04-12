@@ -10,6 +10,9 @@ package de.uday.accenture.salesforce.selenium.pages;
  * @author uysharma
  */
 public class CommanVariable {
+    
+    public static final String USER_ID = "mr.mickeysharma@gmail.com";
+    public static final String PASSWORD = "TWF5YW5rMjIzMzg4";
 
     public static String BASE_URL = "https://udaysharma-dev-ed.lightning.force.com/lightning/";
     public static String HOME_URL = "/lightning/page/home";
