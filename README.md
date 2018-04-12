@@ -1,6 +1,3 @@
-# Dreamforce16Selenium
-Project download for presentation at DF16 (https://success.salesforce.com/Sessions?eventId=a1Q3000000qQOd9EAG#/session/a2q3A000000LBdpQAG)
-
 ## Project Set-up
 * Install maven
 * Install Eclipse
@@ -8,8 +5,6 @@ Project download for presentation at DF16 (https://success.salesforce.com/Sessio
 * In Eclipse, go to File -> Import... -> Maven -> Existing Maven Projects
 * Browse to this project location on your local filesystem and use that as the root directory
 * Check the box for the dream.force.selenium pom.xml file and click finish
-This is great tutorial on setting up a selenium and maven project.  It's for creating a brand new project from scratch, where you are probably looking to download this existing project and import it, but it will still provide more details on getting everything set up.
-http://www.wunderkraut.com/blog/creating-and-running-a-simple-selenium-webdriver-test/2011-09-15 
 
 ## Salesforce Org setup
 * Load the Lightning Design System into org as a static resource
@@ -29,10 +24,8 @@ http://www.wunderkraut.com/blog/creating-and-running-a-simple-selenium-webdriver
 ## Dreamforce16Selenium specific set-up
 * Download latest chromedriver
   * https://sites.google.com/a/chromium.org/chromedriver/downloads
-  * In AccountEditTest.java, replace /location/of/chromedriver with location of chromedriver on your machine.
-* Input Salesforce credentials
-  * In AccountEditTest.java, replace test@df.test / password with your own username and password
-* Replace the hardcoded ID in `String accountId = "00141000003Nm5F";` with the ID from your newly created account.
+  * In AccountEditTest.java, replace ${project.build}/src/test/chromedriver with location of chromedriver on your machine.
+
 
 ## Run
 * Create a new run configuration of type JUnit
