@@ -1,0 +1,61 @@
+<apex:page standardController="Account" standardStylesheets="false" sidebar="false" showheader="false" docType="html-5.0">
+    <head>
+            <title>Account Update - DF16</title>
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS212, 'assets/styles/salesforce-lightning-design-system.css')}" />
+        </head>
+    
+    <body>
+        <!-- REQUIRED SLDS WRAPPER -->
+        <div class="slds">
+            <div class="slds-p-around--xx-large">
+            <!-- START HEADER-->
+            <div class="slds-page-header" role="banner">
+              <div class="slds-grid">
+                <div class="slds-col slds-has-flexi-truncate">
+                  <div class="slds-media slds-no-space slds-grow">
+                    <div class="slds-media__figure">
+                        <!-- icon -->
+                    </div>
+                    <div class="slds-media__body">
+                      <p class="slds-text-title--caps slds-line-height--reset">Account:</p>
+                      <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="{!account.name}">{!account.name}</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END HEADER-->
+            <div class="slds-m-left--x-large slds-m-top--x-large">
+                <div class="slds-text-heading--medium">Update</div>
+                <div class="slds-grid slds-grid--align-left">
+                    <apex:form id="form">
+                        <div class="slds-form-element slds-p-top--small">
+                            <label class="slds-form-element__label" for="name"><abbr class="slds-required" title="required">*</abbr>Account Name</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputField value="{!account.name}" id="name" html-class="slds-input" type="text" html-placeholder="{!account.name}" />
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-p-top--small">
+                            <label class="slds-form-element__label" for="phone">Account Phone</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputField value="{!account.phone}" id="phone" html-class="slds-input" type="text" html-placeholder="{!account.phone}" />
+                            </div>
+                        </div>
+                        <div class="slds-p-top--small">
+                            <apex:commandButton id="save" value="Save" action="{!save}" styleClass="slds-button slds-button--neutral"/>
+                            </div>
+                    </apex:form>
+                </div>
+                </div>
+            </div>   
+        </div>
+        
+        <script>
+            document.getElementById('{!$Component.form.phone}').addEventListener("blur", formatPhone(document.getElementById('{!$Component.form.phone}')));
+            
+            function formatPhone(input) {
+                input.value = input.value.replace(/\D/g, "");
+            }
+        </script>
+    </body>
+</apex:page>
