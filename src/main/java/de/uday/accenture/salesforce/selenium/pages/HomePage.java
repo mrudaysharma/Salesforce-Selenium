@@ -3,29 +3,23 @@ package de.uday.accenture.salesforce.selenium.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HomePage extends Page{
-	
+	public static final Logger LOGGER = LoggerFactory.getLogger(HomePage.class);
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
-	
-	/**
-	 * Navigates to the login page, does the login for you, and returns you a HomePage object
-	 * @param loginUrl - url to the login form
-	 * @param username - admin username
-	 * @param pass - admin password
-	 * @return HomePage object
-	 * @throws InterruptedException
-	 */
 	public HomePage doLogin(String loginUrl, String username, String pass) throws InterruptedException{
 		driver.get(loginUrl);
 		this.getUsernameInput().sendKeys(username);
 		this.getPasswordInput().sendKeys(pass);
 		Thread.sleep(5000); //for demo
 		WebElement login = driver.findElement(By.cssSelector("input#Login"));
+                LOGGER.info("CLICK ON LOGIN BUTTON");
 		login.click();
-		super.waitForElementToStale(login, "login button", 30);
+                super.waitForElementToStale(login, "login button", 30);
 		return this;
 	}
 	

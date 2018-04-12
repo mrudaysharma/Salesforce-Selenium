@@ -60,6 +60,11 @@
             <scope>test</scope>
             <type>jar</type>
         </dependency>
+          <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.2</version>
+        </dependency>
     </dependencies>
     
     <build>
@@ -75,6 +80,7 @@
                     <systemPropertyVariables>
                         <geb.build.reportsDir>${project.build.directory}/test-reports/geb</geb.build.reportsDir>
                         <project.basedir>${project.basedir}/src/test/resources/chromedriver.exe</project.basedir>
+                        <account.name>${account.name}</account.name>
                     </systemPropertyVariables>
                      <suiteXmlFiles>
                                 <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
