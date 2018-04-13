@@ -1,4 +1,4 @@
-package de.uday.accenture.salesforce.selenium.pages;
+package de.uday.ancud.salesforce.selenium.pages;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

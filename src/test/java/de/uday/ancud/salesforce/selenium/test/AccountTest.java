@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.uday.accenture.salesforce.selenium.test;
+package de.uday.ancud.salesforce.selenium.test;
 
-import de.uday.accenture.salesforce.selenium.pages.AccountPageCreate;
+import de.uday.ancud.salesforce.selenium.pages.AccountPageCreate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;

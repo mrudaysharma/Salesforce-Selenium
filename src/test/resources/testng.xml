@@ -2,8 +2,8 @@
 <suite name="Suite" parallel="false">
 	<test name="SalesForceSeleniumTesting">
 		<classes>
-			<class name="de.uday.accenture.salesforce.selenium.test.LoginTest" />
-                        <class name="de.uday.accenture.salesforce.selenium.test.AccountTest" />
+			<class name="de.uday.ancud.salesforce.selenium.test.LoginTest" />
+                        <class name="de.uday.ancud.salesforce.selenium.test.AccountTest" />
 		</classes>
 	</test>
 </suite>

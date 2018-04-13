@@ -1,7 +1,7 @@
-package de.uday.accenture.salesforce.selenium.test;
+package de.uday.ancud.salesforce.selenium.test;
 
-import de.uday.accenture.salesforce.selenium.pages.AccountPageCreate;
-import de.uday.accenture.salesforce.selenium.pages.HomePage;
+import de.uday.ancud.salesforce.selenium.pages.AccountPageCreate;
+import de.uday.ancud.salesforce.selenium.pages.HomePage;
 import junit.framework.TestCase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

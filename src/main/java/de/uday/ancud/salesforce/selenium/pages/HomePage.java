@@ -1,4 +1,4 @@
-package de.uday.accenture.salesforce.selenium.pages;
+package de.uday.ancud.salesforce.selenium.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

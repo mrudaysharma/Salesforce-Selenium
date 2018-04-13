@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.uday.accenture.salesforce.selenium.test;
+package de.uday.ancud.salesforce.selenium.test;
 
-import de.uday.accenture.salesforce.selenium.pages.CommanVariable;
-import de.uday.accenture.salesforce.selenium.pages.HomePage;
+import de.uday.ancud.salesforce.selenium.pages.CommanVariable;
+import de.uday.ancud.salesforce.selenium.pages.HomePage;
 import java.util.Base64;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

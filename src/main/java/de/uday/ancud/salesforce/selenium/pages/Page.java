@@ -1,4 +1,4 @@
-package de.uday.accenture.salesforce.selenium.pages;
+package de.uday.ancud.salesforce.selenium.pages;
 
 import java.net.URL;
 import org.openqa.selenium.By;
