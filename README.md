@@ -22,5 +22,5 @@
 
 ## Run
 * Create a new run configuration of type JUnit
-  * Select radio to run all tests in Dreamforce16Selenium project
+  * Select radio to run all tests in Salesforce-Selenium-Test project
 * Click run!
