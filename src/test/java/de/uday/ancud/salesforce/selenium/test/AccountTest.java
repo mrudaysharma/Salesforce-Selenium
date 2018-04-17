@@ -22,7 +22,18 @@ public class AccountTest extends LoginTest {
     protected void testAccountCreate() throws Exception {
         LOGGER.info("==============CREATE ACCOUNT=================");
         AccountPageCreate acp = new AccountPageCreate(driver);
-        acp.waitForPageLoad();
+        acp.progressingPageLoad();
+        Thread.sleep(5000); //for demo
+        acp.newAccountCreate(); //used for blurring the phone input
+        LOGGER.info("==============ACCOUNT CREATED=================");
+        Thread.sleep(5000);
+    }
+    
+     @Test
+    protected void testAccountDelete() throws Exception {
+        LOGGER.info("==============CREATE ACCOUNT=================");
+        AccountPageCreate acp = new AccountPageCreate(driver);
+        acp.progressingPageLoad();
         Thread.sleep(5000); //for demo
         acp.newAccountCreate(); //used for blurring the phone input
         LOGGER.info("==============ACCOUNT CREATED=================");

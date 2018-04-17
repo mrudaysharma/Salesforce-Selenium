@@ -6,7 +6,7 @@
 package de.uday.ancud.salesforce.selenium.test;
 
 import de.uday.ancud.salesforce.selenium.pages.CommanVariable;
-import de.uday.ancud.salesforce.selenium.pages.HomePage;
+import de.uday.ancud.salesforce.selenium.pages.LoginPage;
 import java.util.Base64;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,15 +32,15 @@ public class LoginTest extends CommanVariable {
         LOGGER.info("LOGIN URL : https://udaysharma-dev-ed.lightning.force.com");
         LOGGER.info("USER_NAME :" + USER_ID);
         LOGGER.info("ENCRYPTED PASSWORD :" + PASSWORD);
-        HomePage hp = new HomePage(driver).doLogin("https://udaysharma-dev-ed.lightning.force.com",
+        LoginPage hp = new LoginPage(driver).doSignIn("https://udaysharma-dev-ed.lightning.force.com",
                 USER_ID,
                 new String(Base64.getDecoder().decode(PASSWORD)));
         if(driver.getTitle().equals("Home | Salesforce"))
         {
         LOGGER.info("==============LOGIN-SUCESSFULL=================");
         }
-        hp.gotoHomepage();
-        hp.waitForPageLoad();
+        hp.gotoIndexPage();
+        hp.renderingPage();
         Thread.sleep(5000); //for demo
     }
 

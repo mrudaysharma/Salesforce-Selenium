@@ -20,7 +20,7 @@ public class CommanVariable {
     public static String ACCOUNT_ID_VIEW = "/view";
 
     public static final String URL = "/r/Account/";
-    public static final String PAGE_IDENTIFIER_CSS = "//a[@href='/lightning/o/Account/home']";
+    public static final String ACCOUNT_PAGE_URL = "//a[@href='/lightning/o/Account/home']";
     public static final String NEW_ACCOUNT_XPATH = "//a[@title='New']";
     public static final String NAME_INPUT_CSS = "input[id*='name']";
     public static final String PHONE_INPUT_CSS = "input[id*='phone']";

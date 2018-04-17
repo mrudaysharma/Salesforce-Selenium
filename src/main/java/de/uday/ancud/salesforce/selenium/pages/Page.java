@@ -31,7 +31,7 @@ public class Page extends CommanVariable {
         }
     }
 
-    public void waitForElementToStale(WebElement webElement, String descriptor, int secondsToWait) {
+    public void loadPageElements(WebElement webElement, String descriptor, int secondsToWait) {
         System.out.println("Waiting for " + descriptor + " to stale.");
         long timeout = System.currentTimeMillis() + (secondsToWait * 1000);
         while (timeout > System.currentTimeMillis()) {
@@ -50,7 +50,7 @@ public class Page extends CommanVariable {
 
     }
 
-    public void waitForPageLoad(String pageIdentifierCss) {
+    public void progressingPageLoad(String pageIdentifierCss) {
         this.waitForElementToBeClickable(pageIdentifierCss, 60);
     }
 }

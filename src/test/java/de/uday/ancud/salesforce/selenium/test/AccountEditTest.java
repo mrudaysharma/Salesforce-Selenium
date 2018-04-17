@@ -1,7 +1,7 @@
 package de.uday.ancud.salesforce.selenium.test;
 
 import de.uday.ancud.salesforce.selenium.pages.AccountPageCreate;
-import de.uday.ancud.salesforce.selenium.pages.HomePage;
+import de.uday.ancud.salesforce.selenium.pages.LoginPage;
 import junit.framework.TestCase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,15 +15,15 @@ public class AccountEditTest extends TestCase {
         System.setProperty("webdriver.chrome.driver", System.getProperty("project.basedir"));
             driver = new ChromeDriver();
           
-            HomePage hp = new HomePage(driver).doLogin("https://udaysharma-dev-ed.lightning.force.com",
+            LoginPage hp = new LoginPage(driver).doSignIn("https://udaysharma-dev-ed.lightning.force.com",
                     "mr.mickeysharma@gmail.com",
                     "Mayank223388");
-            hp.gotoHomepage();
-            hp.waitForPageLoad();
+            hp.gotoIndexPage();
+            hp.renderingPage();
             Thread.sleep(5000); //for demo
             
             AccountPageCreate acp = new AccountPageCreate(driver);
-            acp.waitForPageLoad();
+            acp.progressingPageLoad();
             Thread.sleep(5000); //for demo
             acp.newAccountCreate(); //used for blurring the phone input
             Thread.sleep(5000);

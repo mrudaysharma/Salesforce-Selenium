@@ -28,8 +28,8 @@ public class AccountPageCreate extends Page {
         this.getSaveButton().click();
     }
 
-    public void waitForPageLoad() {
-        super.waitForPageLoad(PAGE_IDENTIFIER_CSS);
+    public void progressingPageLoad() {
+        super.progressingPageLoad(ACCOUNT_PAGE_URL);
     }
 
     public WebElement getNameInput() {
@@ -39,7 +39,7 @@ public class AccountPageCreate extends Page {
     public void newAccountCreate() {
         try {
             String accountName;
-            super.waitForPageLoad(NEW_ACCOUNT_XPATH);
+            super.progressingPageLoad(NEW_ACCOUNT_XPATH);
             LOGGER.info("CLICK ON NEW BUTTON");
             driver.findElement(By.xpath(NEW_ACCOUNT_XPATH)).click();
             Thread.sleep(5000);
