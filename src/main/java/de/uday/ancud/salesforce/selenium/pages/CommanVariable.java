@@ -11,8 +11,8 @@ package de.uday.ancud.salesforce.selenium.pages;
  */
 public class CommanVariable {
     
-    public static final String USER_ID = "mr.mickeysharma@gmail.com";
-    public static final String PASSWORD = "TWF5YW5rMjIzMzg4";
+    public static final String USER_ID = "USERNAME";
+    public static final String PASSWORD = "PASSWORD";
 
     public static String BASE_URL = "https://udaysharma-dev-ed.lightning.force.com/lightning/";
     public static String HOME_URL = "/lightning/page/home";
