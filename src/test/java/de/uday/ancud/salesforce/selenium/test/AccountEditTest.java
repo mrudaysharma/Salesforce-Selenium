@@ -16,8 +16,8 @@ public class AccountEditTest extends TestCase {
             driver = new ChromeDriver();
           
             LoginPage hp = new LoginPage(driver).doSignIn("https://udaysharma-dev-ed.lightning.force.com",
-                    "mr.mickeysharma@gmail.com",
-                    "Mayank223388");
+                    USERNAME,
+                    PASSWORD);
             hp.gotoIndexPage();
             hp.renderingPage();
             Thread.sleep(5000); //for demo
